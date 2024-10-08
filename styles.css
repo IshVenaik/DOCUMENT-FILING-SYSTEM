@@ -1,0 +1,203 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #002a4e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 60px;
+}
+
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #002a4e;
+    border-bottom: 2px solid #002a4e;
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 1 40%;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #002a4e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 400px;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+.button-group {
+    display:flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.button-group button {
+    flex: 1;
+    margin-top: 0;
+}
+
+#cancelEdit {
+    background-color: #ccc;
+    color: #333;
+}
+
+#cancelEdit:hover {
+    background-color: #bbb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #002a4e;
+    color: white;
+}
+
+.reminder {
+    font-weight: bold;
+    color: red;
+}
+
+footer {
+    background-color: #002a4e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.document-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: block;
+}
+
+#searchInput {
+    padding: 5px;
+    width: 200px;
+    margin-right: 5px;
+}
+
+#searchButton {
+    padding: 10px 10px;
+    background-color: #0f2135;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #1c3b5a;
+}
+
+button.delete {
+    background-color: #ff4136;
+    margin-left: 5px;
+}
+
+button.delete:hover {
+    background-color: #ff1a1a;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* This creates space between the buttons */
+}
+
+.action-buttons button {
+    flex: 1; /* This makes the buttons take up equal space */
+}
+
+button.edit {
+    background-color: #0074D9; /* A nice blue color for the edit button */
+}
+
+button.edit:hover {
+    background-color: #0056b3;
+}
+
+button.delete {
+    background-color: #FF4136; /* A red color for the delete button */
+}
+
+button.delete:hover {
+    background-color: #d63029;
+}

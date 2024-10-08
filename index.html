@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRDO Document Filing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="dmsrde_logo.jpg" alt="DRDO Logo" class="logo">
+        <h1>DRDO Document Filing System</h1>
+    </header>
+
+    <div class="container">
+        <h2>Submit a New Document</h2>
+        <form id="document-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="referenceID">Reference ID:</label>
+                    <input type="text" id="referenceID" name="referenceID" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="fromEntity">From (Entity):</label>
+                    <input type="text" id="fromEntity" name="fromEntity" required>
+                </div>
+                <div class="form-group">
+                    <label for="toEntity">To (Entity):</label>
+                    <input type="text" id="toEntity" name="toEntity" required>
+                </div>
+                <div class="form-group">
+                    <label for="pdf">Attach PDF:</label>
+                    <input type="file" id="pdf" name="pdf" accept=".pdf">
+                </div>
+                <div class="form-group">
+                    <label for="actionPdf">Attach Action PDF (Optional):</label>
+                    <input type="file" id="actionPdf" name="actionPdf" accept=".pdf">
+                </div>
+                <div class="form-group">
+                    <label for="actions">Actions (JSON format):</label>
+                    <textarea id="actions" name="actions" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="deadlineDate">Deadline Date:</label>
+                    <input type="date" id="deadlineDate" name="deadlineDate" required>
+                </div>
+            </div>
+            <div class="form-group button-group">
+                <button type="submit">Submit</button>
+                <button type="reset" id="cancelEdit">Cancel</button>
+            </div>
+        </form>
+
+        <div class="document-list-header">
+            <h2>Document List</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton">Search</button>
+                <!-- Add this button somewhere in your HTML, perhaps near the search button -->
+<button id="exportButton">Export to CSV</button>
+            </div>
+        </div>
+
+        <table id="document-table">
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Reference ID</th>
+                    <th>Date of Document</th>
+                    <th>Subject</th>
+                    <th>From (Entity)</th>
+                    <th>To (Entity)</th>
+                    <th>PDF</th>
+                    <th>Action PDF</th>
+                    <th>Actions</th>
+                    <th>Deadline</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Document rows will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        © 2024 Defence Research and Development Organisation (DRDO)
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
